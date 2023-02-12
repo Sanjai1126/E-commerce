@@ -61,7 +61,7 @@ export default function Footer() {
   return (
     <>
       <Box
-        maxW={"1300px"}
+        maxW={"1200px"}
         mx={"auto"}
         pt={5}
         px={{ base: 2, sm: 12, md: 17 }}
@@ -101,7 +101,7 @@ export default function Footer() {
         color={useColorModeValue("gray.700", "gray.200")}
         paddingTop={5}
       >
-        <Container as={Stack} maxW={"1200px"} py={14}>
+        <Container as={Stack} maxW={"1100px"} py={14}>
           <SimpleGrid columns={{ base: 1, sm: 2, md: 5 }}>
             <Stack align={"flex-start"}>
               <ListHeader>POLICY INFO</ListHeader>
@@ -115,7 +115,7 @@ export default function Footer() {
                 Terms of Use
               </Link>
               <Link color={"#a5a5a5"} href={"#"}>
-                Report Abuse & Takedown Policy
+                Report Abuse & Takedown
               </Link>
               <Link color={"#a5a5a5"} href={"#"}>
                 FAQ

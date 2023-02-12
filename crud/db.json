@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "image": "https://via.placeholder.com/300",
+      "brand": "ss s",
+      "price": 3488,
+      "description": "3535tth",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "image": "https://via.placeholder.com/300",
+      "brand": "ss s",
+      "price": 456,
+      "description": "dvcxzxc",
+      "gender": "male",
+      "id": 3
+    }
+  ]
+}

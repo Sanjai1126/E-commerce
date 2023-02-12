@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+### CRUD APPLICATION
+-pages
+.Admin Page
+.Lognin Page
+.Single Product Page
+.EditaProduct Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-Tools
+.React
+.Cyclic-server(Data Base)
+.Redux thunk
+.Routing
+.Generic Component
+.Axios
 
-## Available Scripts
 
-In the project directory, you can run:
+## Navbar Component
 
-### `npm start`
+The Navbar component is a navigation bar that appears at the top of the page on the website. It provides navigation options for the users to access different sections of the website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Navbar component is built using ReactJS and React Router for navigation. Chakra UI is used for styling the Navbar. The Navbar uses the useState hook to keep track of the Add-Product page, and display the search bar and Login/Cart buttons only when the Add-Product page is not selected.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Admin Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this admin page, I used the following tools and technologies to manage the products:
 
-### `npm run build`
+React: A JavaScript library for building user interfaces.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Chakra UI: A React UI library that provides a set of reusable and accessible components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Axios: A popular HTTP client library for sending requests to the server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Redux: A state management library for React applications.
 
-### `npm run eject`
+Cycles Server: A simple and easy-to-use server for testing purposes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The main functionality of this page is to add new products to the store. To achieve this, I have created a form where the admin can enter the product details like the image URL, brand, price, description, and gender. The form inputs are connected to the React state using the useState hook, and the data is saved to the server when the admin submits the form. The form inputs are also validated before submitting to ensure that the data entered is valid.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The data is posted to the server using Axios, and the response from the server is used to update the Redux store. The state management is done using Redux to ensure that the state of the application is consistent and can be easily manipulated.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Overall, this admin page provides a simple and easy-to-use interface for adding new products to the store, and it is built using modern tools and technologies that ensure that the application is scalable and maintainable.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Authentication with reqres.in API and Dynamic Routing
 
-## Learn More
+This project implements authentication using the Reqres.in API. After a successful authentication, the user is dynamically routed to different pages using the useLocation and location.state features in React
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Dynamic Routing :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The dynamic routing in this project is achieved by using the useLocation and location.state features in React.
 
-### Code Splitting
+The useLocation hook is used to access the current URL and the location.state is used to pass data between pages, such as user information and authentication status.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Based on the URL and the location state, the appropriate page is displayed to the user. This allows for a seamless and secure navigation experience in the app.
 
-### Analyzing the Bundle Size
+## Product Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This Product Page allows users to browse through different categories of products and sort them by price.
 
-### Making a Progressive Web App
+Filter Functionality
+The filter functionality allows users to filter products by the following categories:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Men's Dresses
+Women's Dresses
+Kid's Section
+Users can select multiple categories at once to view products that fit the selected criteria.
 
-### Advanced Configuration
+Sort Functionality
+The sort functionality allows users to sort products by price. The options available are:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+High to Low
+Low to High
+This functionality allows users to easily find products that fit their budget.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+User Experience
+The product page is designed with the user in mind, making it easy to navigate and find what you're looking for. Whether you're looking for a specific category of products or want to sort by price, the filter and sort functionalities make it simple to find what you need.
